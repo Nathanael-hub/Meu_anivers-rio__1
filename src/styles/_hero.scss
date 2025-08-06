@@ -1,0 +1,53 @@
+@use 'variables';
+
+
+.hero{
+    padding-bottom: 100px;
+    background-image: url(../images/fundoaniversario.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+    .container{
+        position: relative;
+    }
+
+    &::before{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: variables.$colorSombra;
+        height: 100%;
+        width: 100%;
+        content: '';
+        opacity: 0.9;
+    }
+
+    &__logo{
+        display: block;
+        margin: 0 auto;
+    }
+
+    &__text{
+        padding: 64px;
+        padding-top: 0;
+        font-size: 40px;
+        font-weight: 800;
+        text-align: center;
+    }
+
+        @media (max-width: 640px){
+            padding-bottom: 24px;
+
+        &__logo{
+            width: 300px;
+        }
+
+        &__text{
+            padding: 0px 24px 32px;
+            font-size: 16px;
+        }
+    }
+}

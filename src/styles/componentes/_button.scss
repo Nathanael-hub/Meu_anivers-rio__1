@@ -1,0 +1,11 @@
+@use '../variables';
+
+.buttonC{
+    padding: 12px;
+    text-decoration: none;
+    background-color: variables.$buttonColor;
+    border-radius: 8px;
+    font-weight: bold;
+    white-space: nowrap;
+    text-align: center;
+}

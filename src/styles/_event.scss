@@ -1,0 +1,60 @@
+@use 'variables';
+
+.event{
+    padding: 80px 0;
+
+    &--atracoes{
+        background-image: linear-gradient(variables.$vermelho1, variables.$vermelho2);
+    }
+
+    &--aperitivos{
+        background-image: linear-gradient(variables.$vermelho2, variables.$vermelho3);
+    }
+
+    &--bebidas{
+        background-image: linear-gradient(variables.$vermelho3, variables.$vermelho4);
+    }
+
+    &--pratos{
+        background-image: linear-gradient(variables.$vermelho4, variables.$vermelho5);
+    }
+
+    &--img-left{
+        .container{
+            flex-direction: row-reverse;
+        }
+    }
+
+    .container{
+        display: flex;
+        gap: 80px;
+    }
+
+    &__details{
+        &__title{
+            font-size: 32px;
+        }
+
+        &__description{
+            margin-top: 12px;
+            font-size: 16px;
+        }
+    }
+
+    &__image{
+        width: 300px;
+        border-radius: 5px;
+    }
+
+    @media (max-width: 640px){
+        text-align: center;
+
+        .container{
+            display: block;
+        }
+
+        &__details{
+            margin-bottom: 12px;
+        }
+    }
+}

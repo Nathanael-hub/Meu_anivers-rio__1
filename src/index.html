@@ -4,8 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Aniversário</title>
+    <link rel="stylesheet" href="../src/styles/main.scss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Ola</h1>
+    <header class="hero">
+        <div class="container">
+            <img class="hero__logo" src="./images/logoanivern.png" alt="">
+            <p class="hero__text">
+                Minha festa de aniversário começão em <span id="contador"></span>
+            </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__list">
+                    <li class="infos-bar__list__item">
+                        <b>Localização:</b>
+                        Minha casa - RS
+                    </li>
+                    <li class="infos-bar__list__item">
+                        <b>Preço:</b>
+                        Trazer um presente
+                    </li>
+                    <li class="infos-bar__list__item">
+                        <b>Horário:</b>
+                        19:00h
+                    </li>
+                </ul>
+                <a href="#" class="buttonC">
+                    Confirmar presença
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="event event--atracoes">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Atrações</h2>
+                <p class="event__details__description">Para o entretenimento, a festa contará com música animada, roda de jogo de baralho entre os amigos e, claro, a velha e boa conversa que não pode faltar. Um clima descontraído e divertido pra todo mundo curtir junto.</p>
+            </div>
+            <img class="event__image" src="./images/atraçoes.jpg" alt="fitas de musicas">
+        </div>
+    </section>
+    <section class="event event--img-left event--aperitivos">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Aperitivos</h2>
+                <p class="event__details__description">Como aperitivos, serão servidos salsichão, pedaços de asa de frango bem temperados, coração de galinha na brasa, pão de alho crocante e outros petiscos saborosos, ideais para abrir o apetite e animar a galera antes do prato principal.</p>
+            </div>
+            <img class="event__image" src="./images/aperitivos.jpg" alt="aperitivos de carne">
+        </div>
+    </section>
+    <section class="event event--bebidas">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Bebidas</h2>
+                <p class="event__details__description">Nas bebidas, teremos cerveja gelada, vinho suave, refrigerantes variados e sucos naturais para quem prefere algo sem álcool. Opções para todos os gostos, garantindo refresco e diversão durante toda a festa.</p>
+            </div>
+            <img class="event__image" src="./images/bebidas.jpg" alt="cervejas">
+        </div>
+    </section>
+    <section class="event event--img-left event--pratos">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Pratos principais</h2>
+                <p class="event__details__description"> O prato principal será um delicioso churrasco com carnes variadas bem temperadas, acompanhado de arroz soltinho, maionese caseira cremosa, farofa crocante e vinagrete fresco. Uma combinação clássica e saborosa que agrada a todos os convidados.</p>
+            </div>
+            <img class="event__image" src="./images/pratoprincipal.jpg" alt="churrasco">
+        </div>
+    </section>
+    <footer class="final">
+        <div class="container">
+            <p>
+                &copy; Nathanael Moura - Todos os direitos reservados - 2025
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="./scripts/main.js"></script>
 </body>
 </html>

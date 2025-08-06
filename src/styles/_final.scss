@@ -1,0 +1,8 @@
+@use 'variables';
+
+
+.final{
+    background-color: variables.$vermelho5;
+    text-align: center;
+    padding: 32px 0;
+}

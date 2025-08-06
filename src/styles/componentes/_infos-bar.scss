@@ -1,0 +1,57 @@
+@use '../variables';
+
+.infos-bar{
+    background-color: variables.$colorsecondary;
+    display: flex;
+    padding: 24px;
+    justify-content: space-between;
+    border-radius: 5px;
+
+    &__list{
+    display: flex;
+    gap: 100px;
+
+        &__item{
+            font-size: 18px;
+            color: variables.$colorSombra;
+
+            b{
+                display: block;
+                text-align: center;
+                color: variables.$colorSombra;
+            }
+        }
+    }
+
+    @media (max-width: 640px) {
+        display: block;
+        padding: 16px;
+        margin: 0 12px;
+
+        &__list{
+            display: block;
+
+            &__item{
+                font-size: 12px;
+            }
+
+            b{
+                text-align: left;
+            }
+        }
+
+        &__list__item:last-child {
+            margin-bottom: 16px;
+        }
+
+        a{
+            font-size: 12px;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        &__list{
+            gap: 40px;
+        }
+    }
+}
